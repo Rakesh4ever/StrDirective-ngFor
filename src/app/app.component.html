@@ -1,0 +1,29 @@
+<h2 >{{title}}</h2>
+<hr/>
+<!--
+<h2 class="text-primary">Displaying colors</h2>
+<ul class="list-group" *ngFor="let color of colors">
+ <li class ="list-group-item"> {{color}} </li>
+
+</ul>
+-->
+<h2>
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr>
+        <th>EID</th>
+        <th>EName</th>
+        <th>EAddress</th>
+        <th>EPIN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <td>{{employee.eid}}</td>
+        <td>{{employee.ename}}</td>
+        <td>{{employee.eaddress}}</td>
+        <td>{{employee.epin}}</td>
+      </tr>
+    </tbody>
+  </table>
+</h2>
